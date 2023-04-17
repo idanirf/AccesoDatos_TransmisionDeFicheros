@@ -1,35 +1,42 @@
-# Reciclaje y Limpieza de Madrid
-![imagen](./img/portada.png)
+# Ficheros de Transmisión de Datos - SERVICIO METEOROLOGICO DE AEMET
+![imagen](./img/portada.jpg)
+
 
 ## Descripción
-Se nos ha contratado para realizar un analisis de la recogida de residuos en el municipio de Madrid. Tenemos dos archivos de datos, en uno de ellos tenemos la información sobre los contenedores y el tipo de contenedor y residuo que almacena y en el otro tenemos la información sobre las recogidas de residuos. Estos archivos contienen todos los datos de recogidas durante el año 2021.
-
- En el analisis de datos mostramos un documento sobre la recogida de residuos y sus datos estadísticos, además de unas gráficas basadas en estos datos.
+Nos han propuesto un nuevo problema basado en datos meteorologicos de aemet. Con ellos se nos pide lo siguiente:
+1. Leer los tres ficheros y combinarlos en uno solo completando los datos e incluyendo el campo fecha
+2. Exportar el resultado a Json y XML
+3. Realizar las siguientes consultas:
+- Temperatura máxima por día y lugar
+- Temperatura mínima por día y lugar
+- Temperatura máxima por provincia (día, lugar, valor y momento)
+- Temperatura mínima por provincia (día, lugar, valor y valor)
+- Temperatura media por provincia (día, lugar y valor)
+- Listado de precipitación media por día y provincia
+- Número de lugares en el que llovío por día y provincia
+- Temperatura média de la provincia de Madrid
+- Media de temperatura máxima total
+- Media de temprratura minima total
+- Lugares donde la máxima ha sido antes de las 15:00 por día
+- Lugares donde la mínima ha sido después de las 17:30 por día
+4. Para la provincia de Madrid exportar en JSON y XML el siguiente informe.
+Por cada día:
+- Temperatura media
+- Temperatura máxima (Lugar y momento)
+- Temperatura mínima (Lugar y momento)
+- Si hubo precipitación (sí/no) y valor de la misma.
 
 
 
 ## Funcionamiento
-Para que funcione el programa debemeos ejecutar el siguiente comando en la terminal:
-
-**java -jar basuras.jar opcion(parse/resumen) paramentros[***distrito*** directorio_origen  directorio_destino]**
-
-***En la opción resumen puedes añadir un parámetro más que sera el nombre del distrito y podrás sacar un resumen solo de ese distrito.***
-
-
-## Analisis de datos
-![imagen](./img/cap3.png)
-![imagen](./img/cap1.png)
-![imagen](./img/cap2.png)
-
+Para que funcione el programa debes cambiar en el código las rutas de almacenamiento, una vez esten modificadas, compila el programa y pulsa en run. El programa finalizará y te dará como resultado los informes deseados.
 
 
 ## Autores
-- Azahara Blanco Rodríguez
 - Daniel Rodríguez Fernández
 
 
 ## Contacto 
 * daniel.rodriguezfernandez@alumno.iesluisvives.org
-* azahara.blanco@alumno.iesluisvives.org
 
 
